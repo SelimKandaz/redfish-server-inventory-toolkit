@@ -1,1 +1,6 @@
 requests
+urllib3
+openpyxl
+reportlab
+pypdf
+PySide6

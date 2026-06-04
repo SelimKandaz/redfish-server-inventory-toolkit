@@ -1,18 +1,14 @@
 # Redfish Server Inventory Toolkit
 
-A sanitized public toolkit for collecting server inventory through Redfish-style APIs and generating structured hardware reports.
+An open-source Redfish inventory toolkit for collecting server hardware data and generating structured reports.
 
-This repository uses fake sample responses by default. It does not include real server IPs, credentials, service tags or customer inventory data.
+This repository now includes:
 
-## Features
+1. A simple Redfish JSON report demo.
+2. An optional live Redfish fetch script.
+3. A sanitized desktop configurator application based on the original working tool.
 
-- Parse fake Redfish inventory responses
-- Normalize server model, serial, CPU, memory and storage data
-- Generate Markdown inventory summaries
-- Include an optional Redfish fetch script using environment variables
-- Provide a safe public example of server inventory automation
-
-## Quick start with sample data
+## Simple sample-data report
 
 ```bash
 python src/redfish_inventory_demo.py examples/redfish-system-demo.json --out reports
@@ -27,4 +23,20 @@ pip install -r requirements.txt
 python src/redfish_fetch_system.py --host https://192.0.2.10 --username demo_user --password change_me --out reports/redfish-system.json --insecure
 ```
 
-Do not commit real credentials or real inventory output.
+## Desktop configurator app
+
+```bash
+pip install -r requirements.txt
+python run_desktop.py
+```
+
+Expected local files for the desktop app:
+
+- `task.csv`, same structure as `examples/task.example.csv`
+- a fillable PDF template if you want PDF output
+
+Do not commit your real `task.csv`, credentials or generated inventory reports.
+
+## License
+
+MIT

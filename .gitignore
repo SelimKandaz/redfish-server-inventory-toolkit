@@ -1,7 +1,7 @@
-# Environment and secrets
+# Secrets and local config
 .env
 .env.*
-!.env.example
+task.csv
 *secret*
 *token*
 *password*
@@ -14,14 +14,12 @@ __pycache__/
 .venv/
 venv/
 
-# Build / output
-dist/
-build/
-output/
+# Generated reports
 reports/
-logs/
+Configurator_PDFs*/
+*.pdf
+*.xlsx
 *.log
-*.tmp
 
 # Editor / OS
 .vscode/
