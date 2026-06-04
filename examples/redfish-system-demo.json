@@ -1,0 +1,19 @@
+{
+  "Model": "Demo PowerEdge Server",
+  "SerialNumber": "REDACTED-DEMO-SERIAL",
+  "ProcessorSummary": {
+    "Count": 2,
+    "Model": "Demo Xeon CPU"
+  },
+  "MemorySummary": {
+    "TotalSystemMemoryGiB": 256
+  },
+  "StorageSummary": {
+    "DriveCount": 8,
+    "Controller": "Demo RAID Controller"
+  },
+  "NetworkSummary": {
+    "AdapterCount": 2,
+    "PortCount": 8
+  }
+}
